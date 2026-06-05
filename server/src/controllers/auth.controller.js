@@ -38,7 +38,8 @@ export async function register(req, res) {
         .status(400)
         .json({ message: "Validation error", errors: err.errors });
     }
-    res.status(500).json({ message: "Server error" });
+    console.error("Register error:", err);
+    res.status(500).json({ message: "Server error", error: err.message });
   }
 }
 
