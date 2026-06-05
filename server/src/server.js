@@ -18,15 +18,26 @@ app.use("/api/portfolios", portfolioRoutes);
 
 app.get("/api/health", (_, res) => res.json({ status: "ok" }));
 
-mongoose
-  .connect(
+let isConnected = false;
+
+export async function connectDB() {
+  if (isConnected) return;
+  await mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost:27017/devfolio-forge",
-  )
-  .then(() => {
-    console.log("Connected to MongoDB");
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-  })
-  .catch((err) => {
-    console.error("MongoDB connection error:", err);
-    process.exit(1);
-  });
+  );
+  isConnected = true;
+  console.log("Connected to MongoDB");
+}
+
+if (process.env.NODE_ENV !== "production" || !process.env.VERCEL) {
+  connectDB()
+    .then(() => {
+      app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    })
+    .catch((err) => {
+      console.error("MongoDB connection error:", err);
+      process.exit(1);
+    });
+}
+
+export default app;
