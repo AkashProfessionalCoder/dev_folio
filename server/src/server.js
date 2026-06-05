@@ -9,7 +9,19 @@ import portfolioRoutes from "./routes/portfolio.routes.js";
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:5173" }));
+const allowedOrigins = [
+  "http://localhost:5173",
+  process.env.CLIENT_URL,
+].filter(Boolean);
+
+app.use(
+  cors({
+    origin: (origin, cb) => {
+      if (!origin || allowedOrigins.includes(origin)) return cb(null, true);
+      cb(new Error("Not allowed by CORS"));
+    },
+  }),
+);
 app.use(express.json({ limit: "10mb" }));
 
 app.use("/api/auth", authRoutes);
