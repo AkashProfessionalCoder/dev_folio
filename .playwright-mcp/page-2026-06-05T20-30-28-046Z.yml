@@ -1,0 +1,52 @@
+- main [ref=e3]:
+  - generic [ref=e5]:
+    - heading "Akash Kumar" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Creative Full Stack Developer
+    - paragraph [ref=e8]: Building digital experiences at the intersection of art and engineering.
+  - generic [ref=e10]:
+    - heading "About Me" [level=2] [ref=e11]
+    - paragraph [ref=e12]: Developer with 5+ years of experience. React, Node.js, cloud-native architectures.
+  - generic [ref=e14]:
+    - heading "Featured Work" [level=2] [ref=e15]
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - heading "DevFolio Forge" [level=3] [ref=e19]
+          - paragraph [ref=e20]: SaaS portfolio generator.
+          - link "View Project" [ref=e21] [cursor=pointer]:
+            - /url: https://github.com/akash/devfolio
+        - generic [ref=e23]: Preview
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "CloudSync" [level=3] [ref=e26]
+          - paragraph [ref=e27]: Multi-cloud dashboard.
+          - link "View Project" [ref=e28] [cursor=pointer]:
+            - /url: https://github.com/akash/cloudsync
+        - generic [ref=e30]: Preview
+  - generic [ref=e32]:
+    - heading "Skills" [level=2] [ref=e33]
+    - generic [ref=e34]:
+      - generic [ref=e35]: React
+      - generic [ref=e36]: TypeScript
+      - generic [ref=e37]: Node.js
+      - generic [ref=e38]: MongoDB
+      - generic [ref=e39]: AWS
+      - generic [ref=e40]: Docker
+  - generic [ref=e42]:
+    - heading "Testimonials" [level=2] [ref=e43]
+    - blockquote [ref=e45]:
+      - paragraph [ref=e46]: "\"One of the most talented engineers I have worked with.\""
+      - generic [ref=e47]: Sarah Chen
+      - paragraph [ref=e48]: Engineering Manager
+  - generic [ref=e50]:
+    - heading "Experience" [level=2] [ref=e51]
+    - generic [ref=e53]:
+      - heading "Senior Frontend Engineer" [level=3] [ref=e54]
+      - paragraph [ref=e55]: TechCorp
+      - paragraph [ref=e56]: 2022 - Present
+      - paragraph [ref=e57]: Leading frontend architecture for B2B SaaS.
+  - generic [ref=e59]:
+    - heading "Let's Work Together" [level=2] [ref=e60]
+    - paragraph [ref=e61]: Let us build something amazing together!
+    - link "akash@example.com" [ref=e62] [cursor=pointer]:
+      - /url: mailto:akash@example.com
