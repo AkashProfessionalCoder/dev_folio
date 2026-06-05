@@ -1,0 +1,189 @@
+- generic [ref=e27]:
+  - banner [ref=e28]:
+    - generic [ref=e29]:
+      - button "← Back" [ref=e30] [cursor=pointer]
+      - heading "Creative Developer" [level=1] [ref=e31]
+      - generic [ref=e103]: Saved
+    - generic [ref=e32]:
+      - button "Import JSON" [ref=e33] [cursor=pointer]
+      - button "Save" [disabled] [ref=e34]
+      - button "Export Code" [ref=e35] [cursor=pointer]
+  - generic [ref=e36]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - heading "Hero" [level=3] [ref=e40]
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]: Full Name*
+            - textbox "Full Name" [ref=e44]: Akash Kumar
+          - generic [ref=e45]:
+            - generic [ref=e46]: Role*
+            - textbox "Role" [ref=e47]: Creative Full Stack Developer
+          - generic [ref=e48]:
+            - generic [ref=e49]: Tagline
+            - textbox "Tagline" [ref=e50]: Building digital experiences at the intersection of art and engineering.
+      - generic [ref=e51]:
+        - heading "About" [level=3] [ref=e52]
+        - generic [ref=e54]:
+          - generic [ref=e55]: Bio*
+          - textbox "Bio" [ref=e56]: Developer with 5+ years of experience. React, Node.js, cloud-native architectures.
+      - generic [ref=e57]:
+        - heading "Featured Work" [level=3] [ref=e58]
+        - generic [ref=e60]:
+          - generic [ref=e61]: Projects
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - generic [ref=e108]: Projects 1
+                - button "Remove" [ref=e109] [cursor=pointer]
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: Title*
+                  - textbox [ref=e113]: DevFolio Forge
+                - generic [ref=e114]:
+                  - generic [ref=e115]: Description
+                  - textbox [ref=e116]: SaaS portfolio generator.
+                - generic [ref=e117]:
+                  - generic [ref=e118]: URL
+                  - textbox [ref=e119]: https://github.com/akash/devfolio
+            - generic [ref=e120]:
+              - generic [ref=e121]:
+                - generic [ref=e122]: Projects 2
+                - button "Remove" [ref=e123] [cursor=pointer]
+              - generic [ref=e124]:
+                - generic [ref=e125]:
+                  - generic [ref=e126]: Title*
+                  - textbox [ref=e127]: CloudSync
+                - generic [ref=e128]:
+                  - generic [ref=e129]: Description
+                  - textbox [ref=e130]: Multi-cloud dashboard.
+                - generic [ref=e131]:
+                  - generic [ref=e132]: URL
+                  - textbox [ref=e133]: https://github.com/akash/cloudsync
+          - button "+ Add Projects" [ref=e62] [cursor=pointer]
+      - generic [ref=e63]:
+        - heading "Skills" [level=3] [ref=e64]
+        - generic [ref=e66]:
+          - generic [ref=e67]: Skills
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - textbox "Skills 1" [ref=e136]: React
+              - button "×" [ref=e137] [cursor=pointer]
+            - generic [ref=e138]:
+              - textbox "Skills 2" [ref=e139]: TypeScript
+              - button "×" [ref=e140] [cursor=pointer]
+            - generic [ref=e141]:
+              - textbox "Skills 3" [ref=e142]: Node.js
+              - button "×" [ref=e143] [cursor=pointer]
+            - generic [ref=e144]:
+              - textbox "Skills 4" [ref=e145]: MongoDB
+              - button "×" [ref=e146] [cursor=pointer]
+            - generic [ref=e147]:
+              - textbox "Skills 5" [ref=e148]: AWS
+              - button "×" [ref=e149] [cursor=pointer]
+            - generic [ref=e150]:
+              - textbox "Skills 6" [ref=e151]: Docker
+              - button "×" [ref=e152] [cursor=pointer]
+          - button "+ Add Skills" [ref=e68] [cursor=pointer]
+      - generic [ref=e69]:
+        - heading "Testimonials" [level=3] [ref=e70]
+        - generic [ref=e72]:
+          - generic [ref=e73]: Testimonials
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - generic [ref=e156]: Testimonials 1
+              - button "Remove" [ref=e157] [cursor=pointer]
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - generic [ref=e160]: Quote*
+                - textbox [ref=e161]: One of the most talented engineers I have worked with.
+              - generic [ref=e162]:
+                - generic [ref=e163]: Author*
+                - textbox [ref=e164]: Sarah Chen
+              - generic [ref=e165]:
+                - generic [ref=e166]: Role
+                - textbox [ref=e167]: Engineering Manager
+          - button "+ Add Testimonials" [ref=e74] [cursor=pointer]
+      - generic [ref=e75]:
+        - heading "Experience" [level=3] [ref=e76]
+        - generic [ref=e78]:
+          - generic [ref=e79]: Experience
+          - generic [ref=e169]:
+            - generic [ref=e170]:
+              - generic [ref=e171]: Experience 1
+              - button "Remove" [ref=e172] [cursor=pointer]
+            - generic [ref=e173]:
+              - generic [ref=e174]:
+                - generic [ref=e175]: Company*
+                - textbox [ref=e176]: TechCorp
+              - generic [ref=e177]:
+                - generic [ref=e178]: Position*
+                - textbox [ref=e179]: Senior Frontend Engineer
+              - generic [ref=e180]:
+                - generic [ref=e181]: Duration
+                - textbox [ref=e182]: 2022 - Present
+              - generic [ref=e183]:
+                - generic [ref=e184]: Description
+                - textbox [ref=e185]: Leading frontend architecture for B2B SaaS.
+          - button "+ Add Experience" [ref=e80] [cursor=pointer]
+      - generic [ref=e81]:
+        - heading "Contact" [level=3] [ref=e82]
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]: Email
+            - textbox "Email" [ref=e86]: akash@example.com
+          - generic [ref=e87]:
+            - generic [ref=e88]: Contact Message
+            - textbox "Contact Message" [ref=e89]: Let us build something amazing together!
+    - main [ref=e186]:
+      - generic [ref=e188]:
+        - heading "Akash Kumar" [level=1] [ref=e189]
+        - paragraph [ref=e190]: Creative Full Stack Developer
+        - paragraph [ref=e191]: Building digital experiences at the intersection of art and engineering.
+      - generic [ref=e193]:
+        - heading "About Me" [level=2] [ref=e194]
+        - paragraph [ref=e195]: Developer with 5+ years of experience. React, Node.js, cloud-native architectures.
+      - generic [ref=e197]:
+        - heading "Featured Work" [level=2] [ref=e198]
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - generic [ref=e201]:
+              - heading "DevFolio Forge" [level=3] [ref=e202]
+              - paragraph [ref=e203]: SaaS portfolio generator.
+              - link "View Project" [ref=e204] [cursor=pointer]:
+                - /url: https://github.com/akash/devfolio
+            - generic [ref=e206]: Preview
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - heading "CloudSync" [level=3] [ref=e209]
+              - paragraph [ref=e210]: Multi-cloud dashboard.
+              - link "View Project" [ref=e211] [cursor=pointer]:
+                - /url: https://github.com/akash/cloudsync
+            - generic [ref=e213]: Preview
+      - generic [ref=e215]:
+        - heading "Skills" [level=2] [ref=e216]
+        - generic [ref=e217]:
+          - generic [ref=e218]: React
+          - generic [ref=e219]: TypeScript
+          - generic [ref=e220]: Node.js
+          - generic [ref=e221]: MongoDB
+          - generic [ref=e222]: AWS
+          - generic [ref=e223]: Docker
+      - generic [ref=e225]:
+        - heading "Testimonials" [level=2] [ref=e226]
+        - blockquote [ref=e228]:
+          - paragraph [ref=e229]: "\"One of the most talented engineers I have worked with.\""
+          - generic [ref=e230]: Sarah Chen
+          - paragraph [ref=e231]: Engineering Manager
+      - generic [ref=e233]:
+        - heading "Experience" [level=2] [ref=e234]
+        - generic [ref=e236]:
+          - heading "Senior Frontend Engineer" [level=3] [ref=e237]
+          - paragraph [ref=e238]: TechCorp
+          - paragraph [ref=e239]: 2022 - Present
+          - paragraph [ref=e240]: Leading frontend architecture for B2B SaaS.
+      - generic [ref=e242]:
+        - heading "Let's Work Together" [level=2] [ref=e243]
+        - paragraph [ref=e244]: Let us build something amazing together!
+        - link "akash@example.com" [ref=e245] [cursor=pointer]:
+          - /url: mailto:akash@example.com

@@ -1,0 +1,35 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "DevFolio Forge" [ref=e6] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=e7]:
+        - link "Dashboard" [ref=e8] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Template Creator" [ref=e9] [cursor=pointer]:
+          - /url: /template-creator
+        - link "Profile" [ref=e10] [cursor=pointer]:
+          - /url: /profile
+      - generic [ref=e11]:
+        - generic [ref=e12]: Test User
+        - button "Logout" [ref=e13] [cursor=pointer]
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - button "My Portfolios" [ref=e16] [cursor=pointer]
+      - button "Explore Templates" [ref=e17] [cursor=pointer]
+      - button "Template Creator" [ref=e18] [cursor=pointer]
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: draft
+          - button "Delete" [ref=e23] [cursor=pointer]
+        - heading "Modern Dark Developer" [level=3] [ref=e24]
+        - paragraph [ref=e25]: Updated 06/06/2026
+        - button "Continue Editing" [ref=e26] [cursor=pointer]
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: draft
+          - button "Delete" [ref=e30] [cursor=pointer]
+        - heading "Modern Dark Developer" [level=3] [ref=e31]
+        - paragraph [ref=e32]: Updated 06/06/2026
+        - button "Continue Editing" [ref=e33] [cursor=pointer]

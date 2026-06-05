@@ -1,0 +1,71 @@
+- generic [ref=e67]:
+  - banner [ref=e68]:
+    - generic [ref=e69]:
+      - button "← Back" [ref=e70] [cursor=pointer]
+      - heading "Creative Developer" [level=1] [ref=e71]
+      - generic [ref=e150]: Saved
+    - generic [ref=e72]:
+      - button "Import JSON" [ref=e73] [cursor=pointer]
+      - button "Save" [disabled] [ref=e74]
+      - button "Export Code" [ref=e75] [cursor=pointer]
+  - generic [ref=e76]:
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - heading "Hero" [level=3] [ref=e80]
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]: Full Name*
+            - textbox "Full Name" [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e86]: Role*
+            - textbox "Role" [ref=e87]
+          - generic [ref=e88]:
+            - generic [ref=e89]: Tagline
+            - textbox "Tagline" [ref=e90]
+      - generic [ref=e91]:
+        - heading "About" [level=3] [ref=e92]
+        - generic [ref=e94]:
+          - generic [ref=e95]: Bio*
+          - textbox "Bio" [ref=e96]
+      - generic [ref=e97]:
+        - heading "Featured Work" [level=3] [ref=e98]
+        - generic [ref=e100]:
+          - generic [ref=e101]: Projects
+          - button "+ Add Projects" [ref=e102] [cursor=pointer]
+      - generic [ref=e103]:
+        - heading "Skills" [level=3] [ref=e104]
+        - generic [ref=e106]:
+          - generic [ref=e107]: Skills
+          - button "+ Add Skills" [ref=e108] [cursor=pointer]
+      - generic [ref=e109]:
+        - heading "Testimonials" [level=3] [ref=e110]
+        - generic [ref=e112]:
+          - generic [ref=e113]: Testimonials
+          - button "+ Add Testimonials" [ref=e114] [cursor=pointer]
+      - generic [ref=e115]:
+        - heading "Experience" [level=3] [ref=e116]
+        - generic [ref=e118]:
+          - generic [ref=e119]: Experience
+          - button "+ Add Experience" [ref=e120] [cursor=pointer]
+      - generic [ref=e121]:
+        - heading "Contact" [level=3] [ref=e122]
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - generic [ref=e125]: Email
+            - textbox "Email" [ref=e126]
+          - generic [ref=e127]:
+            - generic [ref=e128]: Contact Message
+            - textbox "Contact Message" [ref=e129]
+    - main [ref=e159]:
+      - generic [ref=e161]:
+        - heading "Akash Kumar" [level=1] [ref=e162]
+        - paragraph [ref=e163]: Creative Full Stack Developer
+        - paragraph [ref=e164]: I design and build digital experiences at the intersection of art and engineering.
+      - generic [ref=e166]:
+        - heading "About Me" [level=2] [ref=e167]
+        - paragraph [ref=e168]: Developer with 5+ years of experience crafting web apps. React, Node.js, cloud-native.
+      - generic [ref=e170]:
+        - heading "Let's Work Together" [level=2] [ref=e171]
+        - paragraph [ref=e172]: Let's build something amazing!
+        - link "akash@example.com" [ref=e173] [cursor=pointer]:
+          - /url: mailto:akash@example.com

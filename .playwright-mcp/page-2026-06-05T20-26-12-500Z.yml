@@ -1,0 +1,70 @@
+- generic [ref=e27]:
+  - banner [ref=e28]:
+    - generic [ref=e29]:
+      - button "← Back" [ref=e30] [cursor=pointer]
+      - heading "Creative Developer" [level=1] [ref=e31]
+    - generic [ref=e32]:
+      - button "Import JSON" [ref=e33] [cursor=pointer]
+      - button "Save" [disabled] [ref=e34]
+      - button "Export Code" [ref=e35] [cursor=pointer]
+  - generic [ref=e36]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - heading "Hero" [level=3] [ref=e40]
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]: Full Name*
+            - textbox "Full Name" [ref=e44]
+          - generic [ref=e45]:
+            - generic [ref=e46]: Role*
+            - textbox "Role" [ref=e47]
+          - generic [ref=e48]:
+            - generic [ref=e49]: Tagline
+            - textbox "Tagline" [ref=e50]
+      - generic [ref=e51]:
+        - heading "About" [level=3] [ref=e52]
+        - generic [ref=e54]:
+          - generic [ref=e55]: Bio*
+          - textbox "Bio" [ref=e56]
+      - generic [ref=e57]:
+        - heading "Featured Work" [level=3] [ref=e58]
+        - generic [ref=e60]:
+          - generic [ref=e61]: Projects
+          - button "+ Add Projects" [ref=e62] [cursor=pointer]
+      - generic [ref=e63]:
+        - heading "Skills" [level=3] [ref=e64]
+        - generic [ref=e66]:
+          - generic [ref=e67]: Skills
+          - button "+ Add Skills" [ref=e68] [cursor=pointer]
+      - generic [ref=e69]:
+        - heading "Testimonials" [level=3] [ref=e70]
+        - generic [ref=e72]:
+          - generic [ref=e73]: Testimonials
+          - button "+ Add Testimonials" [ref=e74] [cursor=pointer]
+      - generic [ref=e75]:
+        - heading "Experience" [level=3] [ref=e76]
+        - generic [ref=e78]:
+          - generic [ref=e79]: Experience
+          - button "+ Add Experience" [ref=e80] [cursor=pointer]
+      - generic [ref=e81]:
+        - heading "Contact" [level=3] [ref=e82]
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]: Email
+            - textbox "Email" [ref=e86]
+          - generic [ref=e87]:
+            - generic [ref=e88]: Contact Message
+            - textbox "Contact Message" [ref=e89]
+    - generic [ref=e90]:
+      - main
+  - generic [ref=e92]:
+    - heading "Set Up Your Portfolio" [level=2] [ref=e93]
+    - paragraph [ref=e94]: Choose how you'd like to start filling your portfolio data.
+    - generic [ref=e95]:
+      - button "Upload JSON Paste your portfolio data as JSON to auto-fill all fields." [ref=e96] [cursor=pointer]:
+        - heading "Upload JSON" [level=3] [ref=e97]
+        - paragraph [ref=e98]: Paste your portfolio data as JSON to auto-fill all fields.
+      - button "Fill Manually Use the form editor to fill in your details section by section." [ref=e99] [cursor=pointer]:
+        - heading "Fill Manually" [level=3] [ref=e100]
+        - paragraph [ref=e101]: Use the form editor to fill in your details section by section.
+    - button "Skip for now" [ref=e102] [cursor=pointer]
