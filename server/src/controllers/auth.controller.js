@@ -60,7 +60,8 @@ export async function login(req, res) {
         .status(400)
         .json({ message: "Validation error", errors: err.errors });
     }
-    res.status(500).json({ message: "Server error" });
+    console.error("Login error:", err);
+    res.status(500).json({ message: "Server error", error: err.message });
   }
 }
 

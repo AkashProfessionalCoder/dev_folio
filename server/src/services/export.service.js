@@ -875,7 +875,10 @@ export default function App() {
 
 export async function generateExport(portfolio) {
   const template = portfolio.templateId;
-  const exportData = nestPortfolioData(portfolio.portfolioData, template.schema);
+  const exportData = nestPortfolioData(
+    portfolio.portfolioData,
+    template.schema,
+  );
 
   return new Promise((resolve, reject) => {
     const archive = archiver("zip", { zlib: { level: 9 } });
@@ -922,9 +925,14 @@ function nestPortfolioData(data, schema) {
     schema.sections.flatMap((s) => s.fields.map((f) => f.key)),
   );
   const topKeys = Object.keys(data);
-  const isAlreadyNested = topKeys.length > 0 && topKeys.every(
-    (k) => schema.sections.some((s) => s.id === k) && typeof data[k] === "object" && !Array.isArray(data[k]),
-  );
+  const isAlreadyNested =
+    topKeys.length > 0 &&
+    topKeys.every(
+      (k) =>
+        schema.sections.some((s) => s.id === k) &&
+        typeof data[k] === "object" &&
+        !Array.isArray(data[k]),
+    );
   if (isAlreadyNested) return data;
 
   const isFlat = topKeys.some((k) => allFieldKeys.has(k));
@@ -933,7 +941,11 @@ function nestPortfolioData(data, schema) {
   const nested = {};
   for (const section of schema.sections) {
     const fields = section.fields;
-    if (fields.length === 1 && fields[0].key === section.id && fields[0].key in data) {
+    if (
+      fields.length === 1 &&
+      fields[0].key === section.id &&
+      fields[0].key in data
+    ) {
       nested[section.id] = data[fields[0].key];
     } else {
       const sectionData = {};
@@ -949,3 +961,4 @@ function nestPortfolioData(data, schema) {
   }
   return nested;
 }
+
