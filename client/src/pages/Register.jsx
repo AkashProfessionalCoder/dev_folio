@@ -28,7 +28,9 @@ export default function Register() {
       setAuth(data.user, data.token);
       navigate("/dashboard");
     } catch (err) {
-      toast.error(err.response?.data?.message || "Registration failed");
+      console.error("Registration error details:", err.response?.data || err.message);
+      const errMsg = err.response?.data?.error || err.response?.data?.message || "Registration failed";
+      toast.error(errMsg);
     } finally {
       setLoading(false);
     }

@@ -19,7 +19,9 @@ export default function Login() {
       setAuth(data.user, data.token);
       navigate('/dashboard');
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Login failed');
+      console.error("Login error details:", err.response?.data || err.message);
+      const errMsg = err.response?.data?.error || err.response?.data?.message || 'Login failed';
+      toast.error(errMsg);
     } finally {
       setLoading(false);
     }
