@@ -2,6 +2,7 @@ node_modules/
 dist/
 .env
 .env.local
+server/.env.prod
 generated/
 *.log
 .DS_Store
