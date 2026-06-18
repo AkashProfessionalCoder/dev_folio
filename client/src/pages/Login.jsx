@@ -20,7 +20,10 @@ export default function Login() {
       navigate('/dashboard');
     } catch (err) {
       console.error("Login error details:", err.response?.data || err.message);
-      const errMsg = err.response?.data?.error || err.response?.data?.message || 'Login failed';
+      const errorData = err.response?.data?.error;
+      const errMsg = typeof errorData === 'object' && errorData !== null
+        ? (errorData.message || JSON.stringify(errorData))
+        : (errorData || err.response?.data?.message || 'Login failed');
       toast.error(errMsg);
     } finally {
       setLoading(false);

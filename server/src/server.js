@@ -23,9 +23,13 @@ let isConnected = false;
 export async function connectDB() {
   if (isConnected) return;
   await mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost:27017/devfolio-forge",
+    process.env.MONGODB_URI ,
+    {
+      serverSelectionTimeoutMS: 5000, // Fail fast in serverless context if DB connection is blocked or down
+    }
   );
   isConnected = true;
+  console.log("Connected to MongoDB",  process.env.MONGODB_URI);
   console.log("Connected to MongoDB");
 }
 

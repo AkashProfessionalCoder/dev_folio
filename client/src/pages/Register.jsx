@@ -29,7 +29,10 @@ export default function Register() {
       navigate("/dashboard");
     } catch (err) {
       console.error("Registration error details:", err.response?.data || err.message);
-      const errMsg = err.response?.data?.error || err.response?.data?.message || "Registration failed";
+      const errorData = err.response?.data?.error;
+      const errMsg = typeof errorData === 'object' && errorData !== null
+        ? (errorData.message || JSON.stringify(errorData))
+        : (errorData || err.response?.data?.message || "Registration failed");
       toast.error(errMsg);
     } finally {
       setLoading(false);
