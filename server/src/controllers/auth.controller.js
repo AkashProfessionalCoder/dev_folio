@@ -83,3 +83,24 @@ export async function updateProfile(req, res) {
     res.status(500).json({ message: "Server error" });
   }
 }
+
+export async function debugEnv(req, res) {
+  try {
+    const mask = (val) => {
+      if (!val) return "NOT FOUND";
+      if (val.length <= 8) return "FOUND (too short to mask)";
+      return `${val.substring(0, 6)}...${val.substring(val.length - 6)} (Length: ${val.length})`;
+    };
+
+    res.json({
+      MONGODB_URI: mask(process.env.MONGODB_URI),
+      JWT_SECRET: mask(process.env.JWT_SECRET),
+      JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || "NOT FOUND (defaulting to 7d)",
+      CLIENT_URL: process.env.CLIENT_URL || "NOT FOUND",
+      NODE_ENV: process.env.NODE_ENV || "NOT FOUND",
+      VERCEL: process.env.VERCEL || "NOT FOUND",
+    });
+  } catch (err) {
+    res.status(500).json({ message: "Failed to load debug info", error: err.message });
+  }
+}
