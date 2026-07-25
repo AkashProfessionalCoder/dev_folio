@@ -2,6 +2,10 @@
 
 A developer portfolio generator where you choose professional templates, fill details through dynamic forms, preview instantly, and export the entire portfolio as a standalone React + Vite + Tailwind project.
 
+## Live Demo
+
+https://dev-folio-sepia.vercel.app/
+
 **Core Philosophy:**
 - Template controls design
 - User controls content
